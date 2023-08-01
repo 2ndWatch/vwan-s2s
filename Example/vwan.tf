@@ -1,7 +1,7 @@
 module "vwan" {
   source = "../terraform-modules/vwan"
 
-  resource_group_name            = "jacob-acton-test-rg"
+  resource_group_name            = "demo-rg"
   disable_vpn_encryption         = false
   allow_branch_to_branch_traffic = false
   type                           = "Standard"
@@ -17,7 +17,7 @@ module "vwan" {
 module "s2s_law" {
   source = "../terraform-modules/log-analytics-workspace"
 
-  resource_group_name = "jacob-acton-test-rg"
+  resource_group_name = "demo-rg"
   name                = "demo-s2s-law"
 
   tags = {
@@ -28,7 +28,7 @@ module "s2s_law" {
 module "vwan_s2s" {
   source = "../terraform-modules/vwan-s2s"
 
-  resource_group_name        = "jacob-acton-test-rg"
+  resource_group_name        = "demo-rg"
   virtual_hub_id             = module.vwan.vwan_hub_id
   virtual_wan_id             = module.vwan.vwan_id
   address_cidrs              = ["10.0.0.0/16"]
