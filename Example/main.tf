@@ -2,10 +2,10 @@ terraform {
   required_version = ">= 1.0.0, < 2.0.0"
 
   backend "azurerm" {
-    resource_group_name  = "jacob-acton-test-rg"
-    storage_account_name = "2wjactonvwans2s"
-    container_name       = "tfstate"
-    key                  = ".tfstate"
+    resource_group_name  = ""
+    storage_account_name = ""
+    container_name       = ""
+    key                  = ""
     use_azuread_auth     = true
     subscription_id      = ""
     tenant_id            = ""
