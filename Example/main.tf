@@ -7,8 +7,8 @@ terraform {
     container_name       = "tfstate"
     key                  = ".tfstate"
     use_azuread_auth     = true
-    subscription_id      = "13b706d3-f7a2-4e89-91d3-921288c68091"
-    tenant_id            = "8242a0a9-c415-4206-be39-06637ad2817a"
+    subscription_id      = ""
+    tenant_id            = ""
   }
 
   required_providers {
@@ -20,8 +20,8 @@ terraform {
 }
 
 provider "azurerm" {
-  subscription_id      = "13b706d3-f7a2-4e89-91d3-921288c68091"
-  tenant_id            = "8242a0a9-c415-4206-be39-06637ad2817a"
+  subscription_id      = ""
+  tenant_id            = ""
 
   features {}
 }
