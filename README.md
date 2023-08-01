@@ -8,7 +8,7 @@ This Terraform code deploys an Azure Site-to-Site (S2S) Virtual Network Gateway 
 
 - [Azure Virtual WAN Documentation](https://docs.microsoft.com/en-us/azure/virtual-wan/)
 - [Azure VPN Gateway Documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/)
-- [Azure S2S Troubeshooting Guide](https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics#GatewayDiagnosticLog)
+- [Troubleshoot Azure VPN Gateway using diagnostic logs](https://learn.microsoft.com/en-us/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics#GatewayDiagnosticLog)
 
 ## Notes
 
