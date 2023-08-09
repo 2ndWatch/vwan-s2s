@@ -42,17 +42,6 @@ resource "azurerm_vpn_gateway_connection" "this" {
   vpn_link {
     name             = "link1"
     vpn_site_link_id = azurerm_vpn_site.this.link[0].id
-
-    ipsec_policy {
-      dh_group                 = var.dh_group
-      ike_encryption_algorithm = var.ike_encryption_algorithm
-      ike_integrity_algorithm  = var.ike_integrity_algorithm
-      encryption_algorithm     = var.encryption_algorithm
-      integrity_algorithm      = var.integrity_algorithm
-      pfs_group                = var.pfs_group
-      sa_data_size_kb          = var.sa_data_size_kb
-      sa_lifetime_sec          = var.sa_lifetime_sec
-    }
   }
 }
 
